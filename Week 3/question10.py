@@ -33,4 +33,3 @@ else:
 print(f'smallest, middle, to largest numbers are: {small}, {medium}, {large}')
 
 
-
