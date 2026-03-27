@@ -1,0 +1,36 @@
+class Recipe:
+	def __init__(self, name, cooking_time):
+		self._name = name
+		self._cooking_time = cooking_time
+	
+	def get_name(self):
+		return self._name
+	
+	def set_name(self, name):
+		self._name = name
+	
+	def get_cooking_time(self):
+		return self._cooking_time
+	
+	def set_cooking_time(self, cooking_time):
+		self._cooking_time = cooking_time
+	
+	def is_quick_meal(self):
+		return self._cooking_time == 30
+	
+
+# Test the function with a sample input
+recipe = Recipe("Pasta", 30)
+print(recipe.get_name())	# Expected output: "Pasta"
+
+print(recipe.get_cooking_time())	# Expected output: 25
+
+print(recipe.is_quick_meal())	# Expected output: True
+
+recipe.set_cooking_time(45)
+print(recipe.get_cooking_time())	# Expected output: 45
+
+print(recipe.is_quick_meal())	# Expected output: False
+
+recipe.set_name("Pizza")
+print(recipe.get_name())	# Expected output: "Pizza"
