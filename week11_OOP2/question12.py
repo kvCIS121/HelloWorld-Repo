@@ -22,13 +22,19 @@ class Restaurant:
 
     def add_menu_item(self, item):
         self.menu_items.append(item)
-    
+            
     def display_menu(self):
         for item in self.menu_items:
             item.show_description()
     
+    def lunch_menu(self):
+        for item in self.menu_items:
+            discounted_price = item.price - 2
+            print(f'Name: {item.name}, Lunch Price: {discounted_price}')
+
+    
     def __str__(self):
-        return f'Restaurant(restaurant_name = {self.restaurant_name})'
+        return f'Restaurant(restaurant_name = {self.restaurant_name}, items = {len(self.menu_items)})'
 
 #creating object for MenuItem
 menu_item_1 = MenuItem('pasta', 25)
@@ -43,4 +49,5 @@ restaurant_1.add_menu_item(menu_item_2)
 
 #execute program
 restaurant_1.display_menu()
+restaurant_1.lunch_menu()
 print(restaurant_1)
