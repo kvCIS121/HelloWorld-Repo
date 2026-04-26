@@ -1,0 +1,7 @@
+alice read 53 pages
+bob read 70 pages
+alice read 55 pages
+charlie read 55 pages
+bob read 30 pages
+
+Total pages read by all students: 263
