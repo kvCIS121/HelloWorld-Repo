@@ -1,0 +1,4 @@
+Name    Date    Total cost of lunch
+Amy     4/27/25 $5
+Barry   4/27/25 $6
+Cody    4/27/25 $7
